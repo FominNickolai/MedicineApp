@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Listvc View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="ListVCViewController" customModule="Medicine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -17,36 +21,222 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wYY-ab-CXv">
+                                <rect key="frame" x="8" y="32" width="359" height="586"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="60" maxX="0.0" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GYV-bG-iPa">
+                                    <size key="itemSize" width="172" height="220"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="60" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ListCell" id="Meb-Dh-Gcf" customClass="ListCell" customModule="Medicine" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="172" height="220"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="172" height="220"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="S5b-DY-XTN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="212" height="267"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paracetamol_tabletki" translatesAutoresizingMaskIntoConstraints="NO" id="1FP-fH-pqw">
+                                                            <rect key="frame" x="0.0" y="0.0" width="172" height="151"/>
+                                                        </imageView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E45-rH-b9D">
+                                                            <rect key="frame" x="0.0" y="151" width="172" height="1"/>
+                                                            <color key="backgroundColor" red="0.29225030689999998" green="0.64539934519999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="r3c-Lx-47A"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Цитрамон" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwB-1T-V3p">
+                                                            <rect key="frame" x="0.0" y="152" width="172" height="35"/>
+                                                            <color key="backgroundColor" red="0.29225030689999998" green="0.64539934519999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="35" id="uhB-xR-kyR"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPW-zX-V3i">
+                                                            <rect key="frame" x="0.0" y="187" width="172" height="1"/>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="9gh-9S-1DT"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GPp-MY-HTv">
+                                                            <rect key="frame" x="0.0" y="188" width="172" height="32"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jz1-Gh-xln">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="86" height="32"/>
+                                                                    <subviews>
+                                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="pill" translatesAutoresizingMaskIntoConstraints="NO" id="nDn-L3-Trb">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="43" height="32"/>
+                                                                            <color key="backgroundColor" red="0.29225030689999998" green="0.64539934519999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="96" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zes-K0-65E">
+                                                                            <rect key="frame" x="43" y="0.0" width="43" height="32"/>
+                                                                            <color key="backgroundColor" red="0.29225030689999998" green="0.64539934519999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="11"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019/05" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id2-YJ-OHl">
+                                                                    <rect key="frame" x="86" y="0.0" width="86" height="32"/>
+                                                                    <color key="backgroundColor" red="0.29225030689999998" green="0.64539934519999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="11"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="32" id="sK6-uB-W42"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="XPW-zX-V3i" firstAttribute="leading" secondItem="S5b-DY-XTN" secondAttribute="leading" id="1om-X3-3JQ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="XPW-zX-V3i" secondAttribute="trailing" id="40o-c9-8WY"/>
+                                                        <constraint firstItem="1FP-fH-pqw" firstAttribute="top" secondItem="S5b-DY-XTN" secondAttribute="top" id="A5y-uD-5fn"/>
+                                                        <constraint firstAttribute="trailing" secondItem="GPp-MY-HTv" secondAttribute="trailing" id="BaB-qb-kwi"/>
+                                                        <constraint firstItem="1FP-fH-pqw" firstAttribute="leading" secondItem="S5b-DY-XTN" secondAttribute="leading" id="QFY-5q-nvI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="E45-rH-b9D" secondAttribute="trailing" id="RGP-ye-j2c"/>
+                                                        <constraint firstItem="RwB-1T-V3p" firstAttribute="leading" secondItem="S5b-DY-XTN" secondAttribute="leading" id="ThP-Vk-4QX"/>
+                                                        <constraint firstAttribute="trailing" secondItem="RwB-1T-V3p" secondAttribute="trailing" id="W3l-65-m7n"/>
+                                                        <constraint firstItem="E45-rH-b9D" firstAttribute="top" secondItem="1FP-fH-pqw" secondAttribute="bottom" id="ijr-AL-pgT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="1FP-fH-pqw" secondAttribute="trailing" id="mDL-rC-Zk1"/>
+                                                        <constraint firstItem="E45-rH-b9D" firstAttribute="leading" secondItem="S5b-DY-XTN" secondAttribute="leading" id="pR3-iQ-BsS"/>
+                                                        <constraint firstItem="GPp-MY-HTv" firstAttribute="leading" secondItem="S5b-DY-XTN" secondAttribute="leading" id="usK-ye-oV2"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="S5b-DY-XTN" secondAttribute="trailing" id="3hQ-ou-LLG"/>
+                                            <constraint firstItem="S5b-DY-XTN" firstAttribute="top" secondItem="Meb-Dh-Gcf" secondAttribute="top" id="72c-nk-uQa"/>
+                                            <constraint firstAttribute="bottom" secondItem="S5b-DY-XTN" secondAttribute="bottom" id="RS5-Zo-Pxn"/>
+                                            <constraint firstItem="S5b-DY-XTN" firstAttribute="leading" secondItem="Meb-Dh-Gcf" secondAttribute="leading" id="rIN-Vw-UIi"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="amount" destination="zes-K0-65E" id="gxn-iE-mSH"/>
+                                            <outlet property="expireDateLabel" destination="id2-YJ-OHl" id="dPH-IR-Jr9"/>
+                                            <outlet property="medicineImage" destination="1FP-fH-pqw" id="5EX-qU-JZW"/>
+                                            <outlet property="mediciniTypeImage" destination="nDn-L3-Trb" id="t1Q-iu-AC6"/>
+                                            <outlet property="title" destination="RwB-1T-V3p" id="z3Y-B8-1sY"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="jKV-Mk-aTM"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="2dT-Ux-1sk"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNi-Rb-8T2">
+                                <rect key="frame" x="8" y="32" width="359" height="46"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YXY-aK-zuo">
+                                        <rect key="frame" x="45" y="9" width="257" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJI-RG-but">
+                                        <rect key="frame" x="319" y="11" width="32" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="heart-outline-with-a-plus-sign-inside"/>
+                                        <connections>
+                                            <action selector="addNewMedicineButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="l1L-5A-Y2b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlP-oq-J5v">
+                                        <rect key="frame" x="8" y="9" width="29" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Shape"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="q6s-8p-xfL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="wYY-ab-CXv" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="32" id="Bxe-PD-LTC"/>
+                            <constraint firstItem="JNi-Rb-8T2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="8" id="EeA-Ir-WbS"/>
+                            <constraint firstAttribute="trailing" secondItem="wYY-ab-CXv" secondAttribute="trailing" constant="8" id="GI8-od-XdY"/>
+                            <constraint firstItem="wYY-ab-CXv" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="8" id="Zag-9V-eNv"/>
+                            <constraint firstAttribute="trailing" secondItem="JNi-Rb-8T2" secondAttribute="trailing" constant="8" id="bvx-x2-X4y"/>
+                            <constraint firstAttribute="bottom" secondItem="wYY-ab-CXv" secondAttribute="bottom" constant="49" id="cWZ-0S-Byl"/>
+                            <constraint firstItem="JNi-Rb-8T2" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="12" id="z3K-XT-qWB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="List" image="ListIcon" selectedImage="ListIcon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="listCollectionView" destination="wYY-ab-CXv" id="O3J-wU-Xl1"/>
+                        <segue destination="jgO-gz-Fvp" kind="presentation" identifier="EditMedicineShow" id="buv-vD-pOh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <customObject id="ikQ-Rb-nRi" customClass="ListVCModuleInitializer" customModule="Medicine" customModuleProvider="target">
+                    <connections>
+                        <outlet property="listvcViewController" destination="9pv-A4-QxB" id="Q7w-nq-kq2"/>
+                    </connections>
+                </customObject>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--Editmedicinevc View Controller-->
+        <scene sceneID="fKa-dQ-y0c">
+            <objects>
+                <viewController id="jgO-gz-Fvp" customClass="EditMedicineVCViewController" customModule="Medicine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JWL-tj-8wa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rbi-qy-Keb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3cS-29-XSa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wg8-u2-fLq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="P7R-n4-iqp" customClass="EditMedicineVCModuleInitializer" customModule="Medicine" customModuleProvider="target">
+                    <connections>
+                        <outlet property="editmedicinevcViewController" destination="jgO-gz-Fvp" id="mhf-fg-xaz"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1583" y="-321"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Medicine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -56,12 +246,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="83" y="313" width="209.5" height="41.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <rect key="frame" x="80" y="362.5" width="215" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -102,7 +294,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="ListIcon" width="35" height="30"/>
+        <image name="Shape" width="29" height="28"/>
+        <image name="heart-outline-with-a-plus-sign-inside" width="64" height="56"/>
+        <image name="paracetamol_tabletki" width="282" height="211"/>
+        <image name="pill" width="50" height="50"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
