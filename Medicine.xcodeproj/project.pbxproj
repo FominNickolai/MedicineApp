@@ -20,6 +20,7 @@
 		59922983911483FA94D07CDC /* ListVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F6C25E6EBF8A20B092DBC /* ListVCRouter.swift */; };
 		6CFBA27DDBA0F814B6E60047 /* EditMedicineVCViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9B6E3BD0D3BB9BB82C068 /* EditMedicineVCViewOutput.swift */; };
 		71E7A74AE6C0F80EDC133B26 /* EditMedicineVCInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD627DD4E811D3E5BCDF863 /* EditMedicineVCInteractorInput.swift */; };
+		8431A58A1E5F6B3300610312 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8431A5891E5F6B3300610312 /* GradientView.swift */; };
 		844DCC2F1E5ECEDA00659594 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DCC2E1E5ECEDA00659594 /* DataManager.swift */; };
 		8484B8A51E5E42DD00839F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484B8A41E5E42DD00839F12 /* AppDelegate.swift */; };
 		8484B8A91E5E42DD00839F12 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484B8A81E5E42DD00839F12 /* SecondViewController.swift */; };
@@ -30,6 +31,7 @@
 		8484B8BD1E5E50BA00839F12 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484B8BC1E5E50BA00839F12 /* ListCell.swift */; };
 		8484B8C01E5E52C900839F12 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484B8BF1E5E52C900839F12 /* ReuseIdentifierProtocol.swift */; };
 		8484B90E1E5E606900839F12 /* medicine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8484B90C1E5E606900839F12 /* medicine.xcdatamodeld */; };
+		84A71C5F1E64AF990041E271 /* EditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A71C5E1E64AF990041E271 /* EditCell.swift */; };
 		923285C0342C2B37B6487777 /* EditMedicineVCInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678DBD229A1EB819AFA52BA7 /* EditMedicineVCInteractor.swift */; };
 		9B6378C2EAF03B50DDBFEF33 /* EditMedicineVCInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC272A0E0AF45A8C87B80140 /* EditMedicineVCInteractorOutput.swift */; };
 		B1C472BC0AF5502A19C2B930 /* EditMedicineVCInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F63ECA596E822B9DB0E3CC /* EditMedicineVCInitializer.swift */; };
@@ -39,6 +41,7 @@
 		DC736F63026270008ECA498D /* ListVCModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666C0C0A3204B3DE620BD0C /* ListVCModuleInput.swift */; };
 		DD1E560B7E9F51B7358AAD9F /* ListVCRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2131568666E04C87A0EEBF /* ListVCRouterInput.swift */; };
 		E25E9FE191C10B8ADEE16862 /* EditMedicineVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8F156E5A5E45B516C0072 /* EditMedicineVCPresenter.swift */; };
+		F3A60D892D6AF472CF9CF272 /* Pods_Medicine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8D5826BEC86E0D785D958F /* Pods_Medicine.framework */; };
 		F728E3BDAAB1EAC152F93424 /* ListVCConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0C36AA6821F488B7978DD3 /* ListVCConfigurator.swift */; };
 		F9ED37C2AEE36AC4781E6F62 /* ListVCInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DFCDF379855C380825BC3 /* ListVCInteractorInput.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +51,7 @@
 		0FFFC7EDB675896199AC37FF /* ListVCViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListVCViewInput.swift; sourceTree = "<group>"; };
 		29874072FA95C9EB4F4ED925 /* EditMedicineVCRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditMedicineVCRouterInput.swift; sourceTree = "<group>"; };
 		2AC9D52B282DC7E7EABD3262 /* EditMedicineVCRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditMedicineVCRouter.swift; sourceTree = "<group>"; };
+		324FDFB0EFE11C314270284B /* Pods-Medicine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medicine.release.xcconfig"; path = "Pods/Target Support Files/Pods-Medicine/Pods-Medicine.release.xcconfig"; sourceTree = "<group>"; };
 		353AE85823CC1798E0169A91 /* EditMedicineVCViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditMedicineVCViewInput.swift; sourceTree = "<group>"; };
 		3B0C36AA6821F488B7978DD3 /* ListVCConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListVCConfigurator.swift; sourceTree = "<group>"; };
 		41D9781F0F9589A2FF7FDE60 /* ListVCViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListVCViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 		678DBD229A1EB819AFA52BA7 /* EditMedicineVCInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditMedicineVCInteractor.swift; sourceTree = "<group>"; };
 		70E8F156E5A5E45B516C0072 /* EditMedicineVCPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditMedicineVCPresenter.swift; sourceTree = "<group>"; };
 		83F63ECA596E822B9DB0E3CC /* EditMedicineVCInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditMedicineVCInitializer.swift; sourceTree = "<group>"; };
+		8431A5891E5F6B3300610312 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		844DCC2E1E5ECEDA00659594 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		8484B8A11E5E42DD00839F12 /* Medicine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medicine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484B8A41E5E42DD00839F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +72,7 @@
 		8484B8BC1E5E50BA00839F12 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		8484B8BF1E5E52C900839F12 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
 		8484B90D1E5E606900839F12 /* Medicine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Medicine.xcdatamodel; sourceTree = "<group>"; };
+		84A71C5E1E64AF990041E271 /* EditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditCell.swift; path = Cell/EditCell.swift; sourceTree = "<group>"; };
 		8777E1E50933CF99D0B2810E /* EditMedicineVCModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditMedicineVCModuleInput.swift; sourceTree = "<group>"; };
 		8B469B612AD554F9636F1F7B /* EditMedicineVCViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditMedicineVCViewController.swift; sourceTree = "<group>"; };
 		963F6C25E6EBF8A20B092DBC /* ListVCRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListVCRouter.swift; sourceTree = "<group>"; };
@@ -75,10 +81,12 @@
 		A1A78CFCE9C02ED2D2D75EC2 /* EditMedicineVCConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditMedicineVCConfigurator.swift; sourceTree = "<group>"; };
 		A50CED820E858D301DC7723B /* ListVCInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListVCInteractorOutput.swift; sourceTree = "<group>"; };
 		AA2131568666E04C87A0EEBF /* ListVCRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListVCRouterInput.swift; sourceTree = "<group>"; };
+		CAC97568D4C4CF9478C91267 /* Pods-Medicine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medicine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Medicine/Pods-Medicine.debug.xcconfig"; sourceTree = "<group>"; };
 		D89DFCDF379855C380825BC3 /* ListVCInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListVCInteractorInput.swift; sourceTree = "<group>"; };
 		DC272A0E0AF45A8C87B80140 /* EditMedicineVCInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditMedicineVCInteractorOutput.swift; sourceTree = "<group>"; };
 		E8B3E90DF7D98F49B86B3E85 /* ListVCInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListVCInitializer.swift; sourceTree = "<group>"; };
 		F666C0C0A3204B3DE620BD0C /* ListVCModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListVCModuleInput.swift; sourceTree = "<group>"; };
+		FE8D5826BEC86E0D785D958F /* Pods_Medicine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Medicine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD627DD4E811D3E5BCDF863 /* EditMedicineVCInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditMedicineVCInteractorInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A60D892D6AF472CF9CF272 /* Pods_Medicine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,13 +115,13 @@
 		09772B1FE0A0315298307B80 /* EditMedicineVC */ = {
 			isa = PBXGroup;
 			children = (
+				84A71C5D1E64AF760041E271 /* Cell */,
 				81391CDB284B7F9BDFFE8C0A /* View */,
 				6E51F3FF22D23D4F3385FA17 /* Presenter */,
 				8EF0194B81B69029780BD0D7 /* Interactor */,
 				17176AB1E78A2E112F10BAFB /* Router */,
 				59A0665AB4C5A3D385358FC8 /* Configurator */,
 			);
-			name = EditMedicineVC;
 			path = EditMedicineVC;
 			sourceTree = "<group>";
 		};
@@ -135,7 +144,6 @@
 				29874072FA95C9EB4F4ED925 /* EditMedicineVCRouterInput.swift */,
 				2AC9D52B282DC7E7EABD3262 /* EditMedicineVCRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -154,8 +162,15 @@
 				A1A78CFCE9C02ED2D2D75EC2 /* EditMedicineVCConfigurator.swift */,
 				83F63ECA596E822B9DB0E3CC /* EditMedicineVCInitializer.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		66FB8EE95BF0700B6FEC543C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE8D5826BEC86E0D785D958F /* Pods_Medicine.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6E51F3FF22D23D4F3385FA17 /* Presenter */ = {
@@ -164,7 +179,6 @@
 				8777E1E50933CF99D0B2810E /* EditMedicineVCModuleInput.swift */,
 				70E8F156E5A5E45B516C0072 /* EditMedicineVCPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -184,8 +198,15 @@
 				9BE9B6E3BD0D3BB9BB82C068 /* EditMedicineVCViewOutput.swift */,
 				8B469B612AD554F9636F1F7B /* EditMedicineVCViewController.swift */,
 			);
-			name = View;
 			path = View;
+			sourceTree = "<group>";
+		};
+		8431A5881E5F6B1200610312 /* CustomViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8431A5891E5F6B3300610312 /* GradientView.swift */,
+			);
+			name = CustomViewClasses;
 			sourceTree = "<group>";
 		};
 		844DCC2D1E5ECEC500659594 /* DataManager */ = {
@@ -201,6 +222,8 @@
 			children = (
 				8484B8A31E5E42DD00839F12 /* Medicine */,
 				8484B8A21E5E42DD00839F12 /* Products */,
+				9C871711CF5E06BDF8F8EB0F /* Pods */,
+				66FB8EE95BF0700B6FEC543C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,6 +238,7 @@
 		8484B8A31E5E42DD00839F12 /* Medicine */ = {
 			isa = PBXGroup;
 			children = (
+				8431A5881E5F6B1200610312 /* CustomViewClasses */,
 				844DCC2D1E5ECEC500659594 /* DataManager */,
 				8484B8BE1E5E529C00839F12 /* Helpers */,
 				8484B8B81E5E441E00839F12 /* Model */,
@@ -254,6 +278,14 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		84A71C5D1E64AF760041E271 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				84A71C5E1E64AF990041E271 /* EditCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		8EF0194B81B69029780BD0D7 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,8 +293,16 @@
 				DC272A0E0AF45A8C87B80140 /* EditMedicineVCInteractorOutput.swift */,
 				678DBD229A1EB819AFA52BA7 /* EditMedicineVCInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9C871711CF5E06BDF8F8EB0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAC97568D4C4CF9478C91267 /* Pods-Medicine.debug.xcconfig */,
+				324FDFB0EFE11C314270284B /* Pods-Medicine.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C52426AE5A9610C6BCF8F98B /* Classes */ = {
@@ -308,9 +348,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8484B8B51E5E42DD00839F12 /* Build configuration list for PBXNativeTarget "Medicine" */;
 			buildPhases = (
+				6434B61AC1B4BB64E86B00D2 /* [CP] Check Pods Manifest.lock */,
 				8484B89D1E5E42DC00839F12 /* Sources */,
 				8484B89E1E5E42DC00839F12 /* Frameworks */,
 				8484B89F1E5E42DC00839F12 /* Resources */,
+				CC357B3744DA0F2DCD4FFDB6 /* [CP] Embed Pods Frameworks */,
+				9699D72B54006AE0DF185696 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -369,11 +412,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6434B61AC1B4BB64E86B00D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9699D72B54006AE0DF185696 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Medicine/Pods-Medicine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC357B3744DA0F2DCD4FFDB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Medicine/Pods-Medicine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8484B89D1E5E42DC00839F12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A71C5F1E64AF990041E271 /* EditCell.swift in Sources */,
 				8484B8A91E5E42DD00839F12 /* SecondViewController.swift in Sources */,
 				8484B8A51E5E42DD00839F12 /* AppDelegate.swift in Sources */,
 				270D15E98DB84C191B50C8A5 /* ListVCViewInput.swift in Sources */,
@@ -396,6 +488,7 @@
 				4DF6FFE12B2118E04573FA74 /* EditMedicineVCViewInput.swift in Sources */,
 				6CFBA27DDBA0F814B6E60047 /* EditMedicineVCViewOutput.swift in Sources */,
 				423A3331299B2D0F23E55B60 /* EditMedicineVCViewController.swift in Sources */,
+				8431A58A1E5F6B3300610312 /* GradientView.swift in Sources */,
 				C2F61DA39E08A767E87CC1A6 /* EditMedicineVCModuleInput.swift in Sources */,
 				E25E9FE191C10B8ADEE16862 /* EditMedicineVCPresenter.swift in Sources */,
 				71E7A74AE6C0F80EDC133B26 /* EditMedicineVCInteractorInput.swift in Sources */,
@@ -525,6 +618,7 @@
 		};
 		8484B8B61E5E42DD00839F12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC97568D4C4CF9478C91267 /* Pods-Medicine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X3563PB3YJ;
@@ -538,6 +632,7 @@
 		};
 		8484B8B71E5E42DD00839F12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324FDFB0EFE11C314270284B /* Pods-Medicine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X3563PB3YJ;
