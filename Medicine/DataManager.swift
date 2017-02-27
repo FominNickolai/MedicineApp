@@ -19,6 +19,46 @@ protocol DataManagerDelegate: class {
 enum MedicineType: Int {
     case Liquid
     case Tablet
+    
+    var textDescription: String {
+        switch self {
+        case .Liquid:
+            return "Жидкость"
+        case .Tablet:
+            return "Таблетки"
+        }
+    }
+}
+
+enum MedicineIcons: Int, CaseCountable {
+    case pills
+    case calendar
+    case medicineType
+    case book
+    case priceTag
+    
+    var image: UIImage {
+        switch self {
+        case .pills: return UIImage(named: "pills.png")!
+        case .calendar: return UIImage(named: "calendar.png")!
+        case .medicineType: return UIImage(named: "medicine-type.png")!
+        case .book: return UIImage(named: "book.png")!
+        case .priceTag: return UIImage(named: "price-tag.png")!
+        }
+    }
+    
+    var label: String {
+        switch self {
+        case .pills: return "QUANTITY"
+        case .calendar: return "EXPIRE DATE"
+        case .medicineType: return "MEDICINE TYPE"
+        case .book: return "INSTRUCTION"
+        case .priceTag: return "PRICE"
+        }
+    }
+    
+    static let caseCount = MedicineIcons.count
+
 }
 
 class DataManager: DataManagerDelegate {
@@ -61,6 +101,12 @@ class DataManager: DataManagerDelegate {
         
         let typeMedice = MedicineType.Liquid.rawValue
         newMedicine.typeMedicine = "\(typeMedice)"
+        
+        let instructions = "3 раза в день по 30 мл"
+        newMedicine.instruction = instructions
+        
+        let price = "484 грн"
+        newMedicine.price = price
         
         // Save the context.
         do {
